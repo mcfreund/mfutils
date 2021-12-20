@@ -17,7 +17,7 @@
 #' ncol(M_bar) == length(unique(g))
 average <- function(M, g) {
   if (!is.matrix(M) & is.character(g)) stop("M must be matrix, g must be character")
-  if (nrow(M) != length(g)) stop("nrow(M) != length(g)")
+  if (ncol(M) != length(g)) stop("ncol(M) != length(g)")
   A <- indicator(g)
   A_scale <- tcrossprod(A, diag(1/colSums(A)))
   mat_bar <- M %*% A_scale

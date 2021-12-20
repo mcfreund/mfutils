@@ -12,5 +12,6 @@
 #' @examples
 #' enlist(letters)
 enlist <- function(nms) {
+  stopifnot(is.character(nms) && is.null(dim(nms)))
   stats::setNames(vector("list", length(nms)), nms)
 }

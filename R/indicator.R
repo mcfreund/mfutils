@@ -19,7 +19,7 @@
 #' M == stats::model.matrix(~ as.factor(x) + 0)
 indicator <- function(x) {
   stopifnot(is.character(x))
-  u <- unique(x)
+  u <- sort(unique(x))
   m <- matrix(0, nrow = length(x), ncol = length(u), dimnames = list(NULL, u))
   idx <- as.numeric(factor(x))
   m[cbind(seq_along(x), idx)] <- 1
