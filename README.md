@@ -6,10 +6,11 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The mfutils package is a collection of various R functions that I
-frequently use. Most of these functions I have created myself, however
-some I have found on stackexchange (and included the attribution/url in
-the documentation).
+The mfutils package is a collection of R functions that I frequently use
+for data analysis. Most of these functions I have created myself,
+however some I have found on the interwebs (e.g., stack overflow), in
+which case I have also included the relevant attribution/url in the
+documentation.
 
 These functions can be sorted into different categories:
 
@@ -24,19 +25,14 @@ These functions can be sorted into different categories:
     `gifti` package (for surface fMRI data)
 
 Although these categories are pretty different, I currently prefer to
-have these functions all within a single package (e.g., rather than a
-separate package for RSA), just to keep things simple.
+have all of these functions within a single package (rather than a
+separate package, e.g., for RSA), as there doesn’t seem to be any
+benefit to splitting them up at this point.
 
 ## Installation
 
-You can install the released version of mfutils from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("mfutils")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+If for whatever reason you would like to install this package, you can
+do so with:
 
 ``` r
 # install.packages("devtools")
