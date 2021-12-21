@@ -1,5 +1,7 @@
 #' Dynamically render rmarkdown report with parameters.
 #'
+#' See here for more information: https://bookdown.org/yihui/rmarkdown/params-knit.html
+#'
 #' @param name (character) .rdm file name
 #' @param src_dir (character) directory within \code{base_dir} that contains \code{name}
 #' @param params optional list of parameters to pass to \code{rmarkdown::render}

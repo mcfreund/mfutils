@@ -27,5 +27,5 @@ render_report(
 \item{base_dir}{location of \code{src_dir} on machiene, defaults to \code{here::here("src")}}
 }
 \description{
-Dynamically render rmarkdown report with parameters.
+See here for more information: https://bookdown.org/yihui/rmarkdown/params-knit.html
 }
