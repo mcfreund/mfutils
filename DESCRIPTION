@@ -14,7 +14,9 @@ Imports:
     abind,
     gifti,
 	rmarkdown,
-	here
+	here,
+	reshape2,
+	ggplot2
 Suggests: 
     covr,
     testthat (>= 3.0.0)
