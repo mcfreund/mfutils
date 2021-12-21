@@ -12,7 +12,9 @@ LazyData: true
 RoxygenNote: 7.1.1
 Imports: 
     abind,
-    gifti
+    gifti,
+	rmarkdown,
+	here
 Suggests: 
     covr,
     testthat (>= 3.0.0)
