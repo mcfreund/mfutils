@@ -17,3 +17,5 @@ matrix of N_vertex by N_images
 \description{
 Convenience function for working with objects of class gifti (see gifti package).
 }
+\keyword{fmri,}
+\keyword{gifti}

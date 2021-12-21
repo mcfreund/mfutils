@@ -7,7 +7,7 @@
 #' @return list
 #' @export
 #'
-#' @keywords lists, iteration
+#' @keywords general, lists
 #'
 #' @examples
 #' enlist(letters)

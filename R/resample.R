@@ -6,6 +6,7 @@
 #' @param x to-be resampled vector
 #' @param ... (optional) additional arguments to sample.int
 #'
+#'
 #' @return a vector with elements resampled
 #' @export
 #'

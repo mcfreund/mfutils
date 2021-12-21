@@ -18,5 +18,5 @@ A wrapper for setNames(vector())
 \examples{
 enlist(letters)
 }
-\keyword{iteration}
-\keyword{lists,}
+\keyword{general,}
+\keyword{lists}

@@ -23,6 +23,5 @@ A convenience function for working with matrices or arrays.
 m <- array(1:8, dim = c(3, 3, 2))
 rename_dim(m, c("newname1", "newname2"), 3)
 }
-\keyword{computation,}
-\keyword{matrix,}
+\keyword{general,}
 \keyword{strings}

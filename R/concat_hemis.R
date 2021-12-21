@@ -6,6 +6,8 @@
 #' @param hemis a character vector indicating which list element is L or R. Default order: c("L", "R")
 #' @param pattern (optional) regexp for extracting only images with matching labels
 #'
+#' @keywords fmri, gifti
+#'
 #' @return matrix of N_vertex by N_images, where N_vertex includes all L and R vertices.
 #' @export
 #'

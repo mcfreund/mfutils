@@ -5,6 +5,8 @@
 #' @param gifti object of class gifti from library(gifti)
 #' @param pattern (optional) regexp for extracting only images with matching labels
 #'
+#' @keywords fmri, gifti
+#'
 #' @return matrix of N_vertex by N_images
 #' @export
 extract_data <- function(gifti, pattern = NULL) {

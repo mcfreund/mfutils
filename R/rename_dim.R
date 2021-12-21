@@ -6,9 +6,10 @@
 #' @param new_names character
 #' @param DIM numeric index or name of dimension (if dimensions are named) whose elements will be renamed
 #'
+#' @keywords general, strings
+#'
 #' @return m but with new names
 #' @export
-#' @keywords computation, matrix, strings
 #' @examples
 #' m <- array(1:8, dim = c(3, 3, 2))
 #' rename_dim(m, c("newname1", "newname2"), 3)

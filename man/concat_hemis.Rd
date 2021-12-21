@@ -19,3 +19,5 @@ matrix of N_vertex by N_images, where N_vertex includes all L and R vertices.
 \description{
 Convenience function for working with objects of class gifti (see gifti package).
 }
+\keyword{fmri,}
+\keyword{gifti}
