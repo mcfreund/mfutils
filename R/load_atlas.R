@@ -8,8 +8,8 @@
 #' @return object of type atlas
 #' @export
 #'
-#' @example
-#' atlas <- load_atlas(name = "schaefer2018_17_200", space = "fsaverage6")
+#' @examples
+#' atlas <- load_atlas(name = "schaefer2018_17_200", space = "fsaverage5")
 #' atlas
 load_atlas <- function(name, space) {
   get(paste0(name, "_", space))

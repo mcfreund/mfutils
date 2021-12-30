@@ -17,3 +17,7 @@ object of type atlas
 \description{
 https://adv-r.hadley.nz/s3.html
 }
+\examples{
+atlas <- load_atlas(name = "schaefer2018_17_200", space = "fsaverage5")
+atlas
+}
