@@ -1,5 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # mfutils
 
@@ -23,11 +24,12 @@ These functions can be sorted into different categories:
     measures
 -   convenience functions for working with **gifti** objects from the
     `gifti` package (for surface fMRI data)
+-   as well as functions that enforce a standardized way to use
+    **parcellation atlases**
 
-Although these categories are pretty different, I currently prefer to
-have all of these functions within a single package (rather than a
-separate package, e.g., for RSA), as there doesn’t seem to be any
-benefit to splitting them up at this point.
+Currently, I prefer to have all of these functions within a single
+package. As this package becomes more developed, I may split off
+encapsulated sets of functions into separate packages.
 
 ## Installation
 
