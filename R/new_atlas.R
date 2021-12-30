@@ -14,6 +14,7 @@ new_atlas <- function(x = list()) {
 }
 
 #' @rdname new_atlas
+#' @export
 validate_atlas <- function(x) {
 
   stopifnot(is_atlas(x))
@@ -34,6 +35,8 @@ validate_atlas <- function(x) {
     if (nrow(x$data) != 10242*2) stop("data is not in fsaverage5 space")
   } else if (x$space == "fsaverage6") {
     if (nrow(x$data) != 40962*2) stop("data is not in fsaverage6 space")
+  } else if (x$space == "fsLR") {
+    if (nrow(x$data) != 32492*2) stop("data is not in fsLR space")
   } else {
     stop("provided space not yet configured")
   }
