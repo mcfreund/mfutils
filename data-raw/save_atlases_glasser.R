@@ -25,11 +25,11 @@ if (file.exists(here("data-raw", "glasser2016", keyfile))) {
 }
 
 nets <- nets %>%
-  select(id = GLASSERLABELNAME, idx = INDEX, hemi = HEMISPHERE, network = NETWORK) %>%
-  filter(id != "") %>%
+  select(parcel = GLASSERLABELNAME, idx = INDEX, hemi = HEMISPHERE, network = NETWORK) %>%
+  filter(parcel != "") %>%
   mutate(
     hemi = paste0(hemi, "H"),
-    id = gsub("_ROI", "", id)
+    parcel = gsub("_ROI", "", parcel)
     )
 
 
@@ -43,8 +43,8 @@ md <- list(
   )
 )
 nets$md <- "none"
-nets$md[nets$id %in% mikeutils::combo_paste(c("R", "L"), "_", md$core)] <- "core"
-nets$md[nets$id %in% mikeutils::combo_paste(c("R", "L"), "_", md$penumbra)] <- "penumbra"
+nets$md[nets$parcel %in% mikeutils::combo_paste(c("R", "L"), "_", md$core)] <- "core"
+nets$md[nets$parcel %in% mikeutils::combo_paste(c("R", "L"), "_", md$penumbra)] <- "penumbra"
 
 fwrite(nets, here("data-raw", "glasser2016", "glasser2016.txt"))
 k <- fread(here("data-raw", "glasser2016", "glasser2016.txt"))

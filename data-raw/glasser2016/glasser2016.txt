@@ -1,4 +1,4 @@
-id,idx,hemi,network,md
+parcel,idx,hemi,network,md
 L_V1,1,LH,Visual1,none
 L_MST,2,LH,Visual2,none
 L_V6,3,LH,Visual2,none
