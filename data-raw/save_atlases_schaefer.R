@@ -54,9 +54,9 @@ for (nparc_i in seq_along(nparcs)) {
       here("data-raw", "schaefer2018",
            paste0("Schaefer2018_", nparcs[nparc_i], "Parcels_", nnetws[nnetw_i], "Networks", ".txt")
            ),
-      header = FALSE, col.names = "id"
+      header = FALSE, col.names = "parcel"
     )
-    info <- separate(k, id, into = c("prefix", "hemi", "network"), extra = "drop")
+    info <- separate(k, parcel, into = c("prefix", "hemi", "network"), extra = "drop")
     k$idx <- 1:nrow(k)
     k$hemi <- info$hemi
     k$network <- info$network

@@ -4,7 +4,7 @@
 \alias{parcellate}
 \title{Parcellate an image using an atlas.}
 \usage{
-parcellate(x, atlas, col_roi = "id")
+parcellate(x, atlas, col_roi = "parcel")
 }
 \arguments{
 \item{x}{to-be-parcellated data matrix, with vertices/voxels as rows}

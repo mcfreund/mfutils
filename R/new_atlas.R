@@ -51,9 +51,9 @@ validate_atlas <- function(x) {
 
   ## check key:
 
-  if (!all(c("id", "idx", "hemi") %in% names(x$key))) stop("missing name(s) in key: id, idx, hemi")
+  if (!all(c("parcel", "idx", "hemi") %in% names(x$key))) stop("missing name(s) in key: parcel, idx, hemi")
   if (any(!x$key$hemi %in% c("LH", "RH"))) stop("x$key$hemi not in 'LH' or 'RH'")
-  if (!(is.character(x$key$id) | is.numeric(x$key$idx) | is.character(x$key$hemi))) stop("key cols of wrong type")
+  if (!(is.character(x$key$parcel) | is.numeric(x$key$idx) | is.character(x$key$hemi))) stop("key cols of wrong type")
   if (length(setdiff(x$key$idx[x$key$hemi == "LH"], xl)) != 0) stop("key idx does not match L hemi vals")
   if (length(setdiff(x$key$idx[x$key$hemi == "RH"], xr)) != 0) stop("key idx does not match R hemi vals")
 
