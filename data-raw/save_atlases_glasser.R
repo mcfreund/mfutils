@@ -61,7 +61,7 @@ for (space_i in seq_along(spaces)) {
   } else {
     fnames <- c(
       here("data-raw", "glasser2016", paste0("lh.HCP-MMP1_", spaces[space_i], ".gii")),
-      here("data-raw", "glasser2016", paste0("lh.HCP-MMP1_", spaces[space_i], ".gii"))
+      here("data-raw", "glasser2016", paste0("rh.HCP-MMP1_", spaces[space_i], ".gii"))
     )
   }
 
