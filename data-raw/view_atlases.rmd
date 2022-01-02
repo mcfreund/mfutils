@@ -1,0 +1,61 @@
+---
+title: "view atlases"
+author: "mike freund"
+date: "1/2/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+library(here)
+library(data.table)
+library(knitr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(abind)
+library(reticulate)
+library(mfutils)
+
+```
+
+
+```{python setup_py, results = FALSE}
+from nilearn import datasets, plotting
+from netneurotools.datasets import fetch_schaefer2018
+import numpy as np
+import nibabel
+```
+
+
+
+```{python}
+
+## get underlays:
+
+fsaverage = datasets.fetch_surf_fsaverage('fsaverage')
+fsaverage5 = datasets.fetch_surf_fsaverage()
+
+overlay = np.split(r.glasser2016_fsaverage['data'], 2)
+
+plotting.view_surf(
+    fsaverage['infl_left'], overlay[0], cmap = "prism", symmetric_cmap = False,
+    title = "glasser 2016, fsaverage, left"
+)
+plotting.view_surf(
+    fsaverage['infl_right'], overlay[1], cmap = "prism", symmetric_cmap = False,
+    title = "glasser 2016, fsaverage, right"
+)
+
+overlay5 = np.split(r.glasser2016_fsaverage5['data'], 2)
+
+plotting.view_surf(
+    fsaverage5['infl_left'], overlay5[0], cmap = "prism", symmetric_cmap = False,
+    title = "glasser 2016, fsaverage5, left"
+)
+plotting.view_surf(
+    fsaverage5['infl_right'], overlay5[1], cmap = "prism", symmetric_cmap = False,
+    title = "glasser 2016, fsaverage5, right"
+)
+
+```
