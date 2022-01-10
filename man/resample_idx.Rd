@@ -2,28 +2,22 @@
 % Please edit documentation in R/resample_idx.R
 \name{resample_idx}
 \alias{resample_idx}
-\title{Build matrix of resampled indices from character vector of condition labels.}
+\title{Generate indices for resampling data.}
 \usage{
-resample_idx(
-  conditions,
-  n_resamples = 10000,
-  resample_to = NULL,
-  replace = FALSE
-)
+resample_idx(conditions, n_resamples, resample_to = NULL, replace = FALSE)
 }
 \arguments{
-\item{conditions}{character vector of length n_obs that indicates the condition or class to which each observation
-belongs.}
+\item{conditions}{character vector}
 
-\item{n_resamples}{The number of resamples to draw (defaults to 1,000)}
+\item{n_resamples}{integer}
 
-\item{resample_to}{The resampled 'resolution': the number of observations per condition in the resampled result}
+\item{resample_to}{integer}
 
-\item{replace}{Draw with replacement (bootstrap)?}
+\item{replace}{boolean}
 }
 \value{
-An integer matrix, n_resamples by n_obs
+
 }
 \description{
-Build matrix of resampled indices from character vector of condition labels.
+Generate indices for resampling data.
 }
