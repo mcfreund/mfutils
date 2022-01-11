@@ -16,7 +16,7 @@ resample_idx(conditions, n_resamples, resample_to = NULL, replace = FALSE)
 \item{replace}{boolean}
 }
 \value{
-
+integer matrix of resampled indices
 }
 \description{
 Generate indices for resampling data.

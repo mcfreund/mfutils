@@ -5,7 +5,7 @@
 #' @param resample_to integer
 #' @param replace boolean
 #'
-#' @return
+#' @return integer matrix of resampled indices
 #' @export
 #'
 #' @examples
