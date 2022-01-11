@@ -13,13 +13,17 @@ RoxygenNote: 7.1.1
 Imports: 
     abind,
     gifti,
-	rmarkdown,
-	here,
-	reshape2,
-	ggplot2
+    rmarkdown,
+    here,
+    reshape2,
+    ggplot2,
+    Rcpp
 Suggests: 
     covr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
+LinkingTo: 
+    RcppArmadillo,
+    Rcpp
